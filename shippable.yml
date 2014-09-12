@@ -2,7 +2,7 @@ language: python
 python:
  - 2.7
 install: true
-before_script: mkdir shippable/
+before_script: mkdir shippable/testresults
 script:
  - npm install -g bower
  - bower --version
