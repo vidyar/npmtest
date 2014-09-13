@@ -3,7 +3,7 @@ python:
  - 2.7
 install: true
 before_script: 
- - mkdir shippable/testresults
+ #- mkdir shippable/testresults
  - echo $secret_key
 script:
  - npm install -g bower
