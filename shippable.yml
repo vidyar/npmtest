@@ -2,8 +2,12 @@ language: python
 python:
  - 2.7
 install: true
-before_script: mkdir shippable/testresults
+before_script: 
+ - mkdir shippable/testresults
+ - echo $secret_key
 script:
  - npm install -g bower
  - bower --version
 archive: true
+env:
+ - secure: MNaIDFEftXpN4ZxxzzESiXs5iC5t0fbmA0q9Fm/62y6uog1GpNQPzz5B8SwYjgL+LWTQdM4wC5K+DGpXHXOn/FjnPJBxKnXZzFn7mfL4yKyfMilXJ6HtIMiiF6tr9tYgBLPASXfWuF57jEuheMjzIyq4Vh5p+fQu/3jR0FMBunASOmZSh3YrPFVpG1qYAUqdHMUOVmUXpAieQPhiMALQU8fCXErMq556M/GQAMARgsF7siRBOtzHIVJJHKIbseRKW/DAdMiTQPGFpuJD6dXLEEvQ9ynCN4+KIzAtepYnNiYTS8frZY66LqclTiNU8/n/iW7/Bc4DUdtKUGue9k9HNQ==
